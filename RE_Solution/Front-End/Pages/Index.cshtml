@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!-- Hero Carousel - Full Width -->
+<div class="position-relative mx-n3" style="margin-left: calc(-1 * (100vw - 100%) / 2); margin-right: calc(-1 * (100vw - 100%) / 2); width: 100vw; left: 0;">
+    <div id="heroCarousel" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="12000" data-bs-pause="false">
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            @for (int i = 0; i < Model.ImagePaths.Count; i++)
+            {
+                var fileName = System.IO.Path.GetFileNameWithoutExtension(Model.ImagePaths[i]);
+                <div class="carousel-item @(i == 0 ? "active" : "")">
+                    <img src="@Model.ImagePaths[i]" class="d-block w-100" alt="@fileName" style="height: 80vh; object-fit: cover;">
+                </div>
+            }
+        </div>
+        
+        <!-- Overlay Content -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+            <div class="text-center" style="background: rgba(200, 200, 200, 0.7); width: 100%; padding: 2rem 0;">
+                <h1 class="display-4 mb-3">Welcome</h1>
+                <div class="container" style="font-size: 2rem; max-width: 900px;">
+                    Explore the resources you deserve! Schedule a call with Bram Groen for the full power of a certified national realtor!
+                </div>
+                <div class="mt-4">
+                    <a href="#" class="btn btn-secondary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#calendlyModal" role="button">
+                        <i class="bi bi-phone me-2"></i>
+                        Schedule Now
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carousel Controls -->
+@*         <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> *@
+    </div>
+</div>
+
+<!-- Scheduling Modal (Separate from carousel) -->
+<div class="modal fade" id="calendlyModal" tabindex="-1" aria-labelledby="calendlyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="calendlyModalLabel">Schedule a Call with Bram Groen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="height:80vh;">
+                <iframe src="https://calendly.com/bram_groen/30-minute-meeting"
+                        width="100%" height="100%" style="border:0; min-height:400px;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

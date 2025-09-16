@@ -1,0 +1,12 @@
+# Ignore all CSV files
+*.csv
+
+# Visual Studio cache & build files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.db
+*.vsidx
+*.sqlite

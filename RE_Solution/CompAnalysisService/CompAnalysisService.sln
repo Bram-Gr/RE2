@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompAnalysisService", "CompAnalysisService\CompAnalysisService.csproj", "{D0A16402-FEF2-406E-A008-F37587A66208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Front-End", "..\Front-End\Front-End.csproj", "{0CB91342-418B-49E5-84C5-57A65883AAB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0A16402-FEF2-406E-A008-F37587A66208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A16402-FEF2-406E-A008-F37587A66208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A16402-FEF2-406E-A008-F37587A66208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A16402-FEF2-406E-A008-F37587A66208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CB91342-418B-49E5-84C5-57A65883AAB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB91342-418B-49E5-84C5-57A65883AAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB91342-418B-49E5-84C5-57A65883AAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB91342-418B-49E5-84C5-57A65883AAB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE7AC6A3-3CBF-481F-91D0-977972847193}
+	EndGlobalSection
+EndGlobal
