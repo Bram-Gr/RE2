@@ -12,7 +12,6 @@
   <ItemGroup>
     <None Include="wwwroot\assets\image.jpg" />
     <None Include="wwwroot\assets\R.jfif" />
-    <None Include="wwwroot\assets\Screenshot %2862%29.png" />
     <None Include="wwwroot\assets\west-palm-beach.jfif" />
   </ItemGroup>
 
