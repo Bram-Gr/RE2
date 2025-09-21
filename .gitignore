@@ -10,3 +10,6 @@ obj/
 *.db
 *.vsidx
 *.sqlite
+*.xlsx
+*.TXT
+*.doc
